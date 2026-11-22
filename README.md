@@ -29,6 +29,39 @@ npx skills add jony4/blackstone --skill blackstone-short-fiction
 |---|---|---|
 | [blackstone-longform-fiction](blackstone-longform-fiction/) | 中长篇小说、网络小说、连载小说 | 可用 |
 | [blackstone-short-fiction](blackstone-short-fiction/) | 短篇小说、微小说、单篇完结故事 | 可用 |
+| [blackstone-official-writing](blackstone-official-writing/) | 机关和企事业单位公文、工作总结与方案 | 试用 |
+| [blackstone-patent-disclosure](blackstone-patent-disclosure/) | 中国发明专利技术交底书 | 试用 |
+| [blackstone-technical-bidding](blackstone-technical-bidding/) | 技术项目找标、应标、编标、终审和递交 | 试用 |
+| [blackstone-technical-evaluation](blackstone-technical-evaluation/) | 技术项目评标办法、初审、评分、复核和报告 | 试用 |
+
+## 技术投标和评标怎么试
+
+在本仓库根目录安装所需技能，新开会话后使用。
+
+```bash
+npx skills add . --skill blackstone-technical-bidding
+npx skills add . --skill blackstone-technical-evaluation
+```
+
+投标方可以给出地区、行业、关键词和截止时间，先做公告筛选；手头已有文件时，可以说「用 $blackstone-technical-bidding 读取这套文件和补遗，按包生成参投判断、响应矩阵和终审清单」。
+
+评标方可以说「用 $blackstone-technical-evaluation 根据招标文件和评标办法，核对初审职责、评分公式和异常处理，再生成评审记录表」。两套流程均以中国大陆制度为起点，按项目类型、采购方式、生效文件和当地规则执行。
+
+## 发明专利交底书怎么试
+
+在本仓库根目录运行 `npx skills add . --skill blackstone-patent-disclosure`，新开会话后可以这样说。
+
+> 黑石，用 $blackstone-patent-disclosure 根据我指定的代码目录和设计笔记整理发明专利交底书。先弄清旧方案的问题、新方案怎么实现和技术效果有哪些依据。缺的实现细节帮我列出来。
+
+可以带想法、代码、图纸、试验记录或现有草稿来写。有代理机构模板时可以直接提供。技能默认在当前任务范围内整理用户指定的材料。
+
+## 公文版怎么试
+
+在本仓库根目录运行 `npx skills add . --skill blackstone-official-writing`，新开会话后可以直接说：
+
+> 黑石，把下面的会议记录整理成纪要。会上提出的建议和已经议定的事项请分别写清。
+
+也可以交给它一份旧稿，指定“只查文种、数字和责任分工”。公文版支持本地文稿起草、改写和审校。
 
 ## 短故事版能做什么
 

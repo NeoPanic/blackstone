@@ -1,0 +1,4 @@
+interface:
+  display_name: "黑石写作助手·公文版"
+  short_description: "根据来文、会议记录和业务材料起草公文，核对文种、行文关系与事实口径。"
+  default_prompt: "用 $blackstone-official-writing 把这份会议记录整理成纪要，保留议定事项，标出需要核实的分工。"

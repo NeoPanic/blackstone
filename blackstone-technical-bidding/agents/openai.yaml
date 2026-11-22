@@ -1,0 +1,4 @@
+interface:
+  display_name: "黑石写作助手·技术投标"
+  short_description: "查找技术项目采购公告，逐条响应要求，组装投标文件并核对最终递交件。"
+  default_prompt: "用 $blackstone-technical-bidding 读取这套招标文件和补遗，按包列出参投门槛、逐条响应表和编标计划。"
